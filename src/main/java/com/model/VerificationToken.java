@@ -24,7 +24,7 @@ public class VerificationToken {
 
     //Un uno a uno con un usuario
     @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "id",
+    @JoinColumn(name = "user_id",
         nullable = false,
         foreignKey = @ForeignKey(name = "FK_USER_VERIFY_TOKEN"))
     private User user;

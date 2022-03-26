@@ -11,7 +11,8 @@ import org.springframework.security.web.SecurityFilterChain;
 public class WebSecurityConfig {
 
     private static final String[] WHITE_LIST_URLS = {
-        "/register"
+        "/register",
+        "/verifyRegistration"
     };
 
     @Bean
@@ -19,7 +20,7 @@ public class WebSecurityConfig {
         return new BCryptPasswordEncoder(11);
     }
 
-    //Para pasar la api de Spring Security y poder acceder a tus endpoints
+    //Para pasar la api de Spring Security y poder acceder a tus endpoints (hacer tu configuracion custom)
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.cors()

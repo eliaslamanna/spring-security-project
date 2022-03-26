@@ -7,14 +7,10 @@ import com.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
-@RequestMapping("/register")
 @RestController
 public class RegistrationController {
 
@@ -27,12 +23,22 @@ public class RegistrationController {
         this.publisher = publisher;
     }
 
-    @PostMapping
+    @PostMapping("/register")
     public String registerUser(@RequestBody UserDTO userDTO, final HttpServletRequest request) {
         User user = userService.registerUser(userDTO);
         //creo evento enviando token en forma de email y ese email se usa para verificar al usuario
         publisher.publishEvent(new RegistrationCompleteEvent(user,applicationUrl(request)));
         return "Success";
+    }
+
+    @GetMapping("/verifyRegistration")
+    public String verifyRegistration(@RequestParam("token") String token) {
+        String result = userService.validateVerificationToken(token);
+        if(result.equalsIgnoreCase("valid")) {
+            return "User Verifies Successfully";
+        } else {
+            return "Bad User";
+        }
     }
 
     //Por ahora lo mockea

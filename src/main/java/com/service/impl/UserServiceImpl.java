@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.Calendar;
+
 @Service
 public class UserServiceImpl implements IUserService {
 
@@ -41,5 +43,26 @@ public class UserServiceImpl implements IUserService {
     public void saveVerificationTokenForUser(String token, User user) {
         VerificationToken verificationToken = new VerificationToken(user,token);
         verificationTokenRepository.save(verificationToken);
+    }
+
+    @Override
+    public String validateVerificationToken(String token) {
+        VerificationToken verificationToken = verificationTokenRepository.findByToken(token);
+        if(verificationToken == null) {
+            return "invalid";
+        }
+        User user = verificationToken.getUser();
+        Calendar cal = Calendar.getInstance();
+
+        //Chequeo si el token expiro y si lo esta lo borro
+        if((verificationToken.getExpirationTime().getTime() - cal.getTime().getTime()) <= 0) {
+            verificationTokenRepository.delete(verificationToken);
+            return "expired";
+        }
+
+        //Si activo el token entonces cambio el usuario a habilitado y lo actualizo en la base
+        user.setEnabled(true);
+        userRepository.save(user);
+        return "valid";
     }
 }
