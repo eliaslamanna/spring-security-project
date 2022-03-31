@@ -16,4 +16,5 @@ public interface IUserService {
     String validatePasswordResetToken(String token);
     Optional<User> getUserByPasswordResetToken(String token);
     void changePassword(User user, String newPassword);
+    boolean oldPasswordIsValid(User user, String oldPassword);
 }

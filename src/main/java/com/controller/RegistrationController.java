@@ -59,6 +59,7 @@ public class RegistrationController {
         return "http://" + request.getServerName() + ":" + request.getServerPort() + request.getContextPath();
     }
 
+    //No es lo mismo que cambiarla, solamente la resetea sin importarle la contraseña vieja
     @PostMapping("/resetPassword")
     public String resetPassword(@RequestBody PasswordDTO passwordDTO, HttpServletRequest request) {
         User user = userService.findUserByEmail(passwordDTO.getEmail());
@@ -93,6 +94,18 @@ public class RegistrationController {
         } else {
             return "Invalid Token";
         }
+    }
+
+    @PostMapping("/changePassword")
+    public String changePassword(@RequestBody PasswordDTO passwordDTO) {
+        User user = userService.findUserByEmail(passwordDTO.getEmail());
+        if(!userService.oldPasswordIsValid(user,passwordDTO.getOldPassword())) {
+            return "Invalid Old Password";
+        }
+
+        //guardo la nueva contraseña
+        userService.changePassword(user,passwordDTO.getNewPassword());
+        return "Password Changed Successfully";
     }
 
     private void resendVerificationTokenMail(User user, String applicationUrl, VerificationToken verificationToken) {

@@ -119,4 +119,10 @@ public class UserServiceImpl implements IUserService {
         user.setPassword(passwordEncoder.encode(newPassword));
         userRepository.save(user);
     }
+
+    @Override
+    public boolean oldPasswordIsValid(User user, String oldPassword) {
+        //Chequeo que corresponda la contraseña vieja (la que puse para cambiar) con la que tiene el usuario actual
+        return passwordEncoder.matches(oldPassword,user.getPassword());
+    }
 }
