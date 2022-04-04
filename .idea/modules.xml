@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Oauth-authorization-server/Oauth-authorization-server.iml" filepath="$PROJECT_DIR$/Oauth-authorization-server/Oauth-authorization-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Oauth-resource-server/Oauth-resource-server.iml" filepath="$PROJECT_DIR$/Oauth-resource-server/Oauth-resource-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-security-client/spring-security-client.iml" filepath="$PROJECT_DIR$/spring-security-client/spring-security-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-security-project.iml" filepath="$PROJECT_DIR$/spring-security-project.iml" />
     </modules>

@@ -5,51 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93409d65-7116-442a-9743-003c503ae3e6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Oauth-authorization-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/StartApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/config/WebSecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/RegistrationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/event/RegistrationCompleteEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/event/listener/RegistrationCompleteEventListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/model/PasswordResetToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/model/VerificationToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/model/builder/UserBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/model/dto/PasswordDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/model/dto/UserDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/repository/PasswordResetTokenRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/repository/VerificationTokenRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/IUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-prod.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/StartApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/config/WebSecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/RegistrationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/event/RegistrationCompleteEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/event/listener/RegistrationCompleteEventListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/model/PasswordResetToken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/model/VerificationToken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/model/builder/UserBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/model/dto/PasswordDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/model/dto/UserDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/repository/PasswordResetTokenRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/repository/VerificationTokenRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service/IUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security-client/spring-security-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security-client/spring-security-client.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
