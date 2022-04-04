@@ -103,7 +103,7 @@ public class AuthorizationServerConfig {
     public ProviderSettings providerSettings() {
         //Aca configuro los endpoints que quiero (Ctrl + click en ProviderSettings puedo ver cuales hay)
         return ProviderSettings.builder()
-                .issuer("http://localhost:9000") //en el archivo hosts de la pc encuentro esto, lo puedo agregar
+                .issuer("http://auth-server:9000") //en el archivo hosts de la pc encuentro esto, lo puedo agregar
                 .build();
     }
 }
